@@ -12,7 +12,20 @@ package com.narxoz.rpg.character;
  * Different character classes (Warrior, Mage, Archer) are concrete products.
  */
 public interface Character {
+    String getName();
+    int getHealth();
+    int getMana();
+    int getStrength();
+    int getIntelligence();
+    void displayStats();
+    void useSpecialAbility();
 
+    void atack();
+    String getWeapon();
+    String getArmor();
+    void equipWeapon(String weapon);
+    void equipArmor(String armor);  
+    
     // TODO: Define common character behaviors
     // Consider methods like:
     // - String getName()

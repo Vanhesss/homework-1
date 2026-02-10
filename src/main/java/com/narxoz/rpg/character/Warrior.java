@@ -24,6 +24,9 @@ public class Warrior implements Character {
     private int strength;
     private int intelligence;
 
+    private String weapon;
+    private String armor;
+
     // TODO: Add fields for equipped weapon and armor
     // Think: Should Warrior know about its equipment?
 
@@ -41,10 +44,22 @@ public class Warrior implements Character {
     // You need to define those methods in Character interface first!
 
     // Example method structure:
-    public String getName() {
+    public String getName(){
         return name;
     }
-
+    public int getHealth(){
+        return health;
+    }
+    public int getMana(){
+        return mana;
+    }
+    public int getStrength(){
+        return strength;
+    }
+    public int getIntelligence(){
+        return intelligence;
+    }
+    
     public void displayStats() {
         System.out.println("=== " + name + " (Warrior) ===");
         System.out.println("Health: " + health);
@@ -56,6 +71,22 @@ public class Warrior implements Character {
     public void useSpecialAbility() {
         System.out.println(name + " uses BERSERKER RAGE! Strength temporarily increased!");
     }
+    
+    public void atack() {
+        System.out.println(name + " attacks with " + weapon + " dealing " + strength + " damage!");
+    }
+    public String getWeapon() {
+        return weapon;
+    }
+    public String getArmor() {
+        return armor;
+    }
+    public void equipWeapon(String weapon) {
+        this.weapon = weapon;
+    }
+    public void equipArmor(String armor) {
+        this.armor = armor;
+    }
 
     // TODO: Add equipment-related methods
     // Examples:
@@ -63,4 +94,4 @@ public class Warrior implements Character {
     // - void equipArmor(Armor armor)
     // - void displayEquipment()
 
-}
+};

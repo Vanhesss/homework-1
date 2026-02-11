@@ -18,6 +18,7 @@ package com.narxoz.rpg;
 public class Main {
     public static void main(String[] args) {
         System.out.println("=== RPG Character & Equipment System ===\n");
+        
 
         // TODO: Demonstrate Factory Method Pattern
         // Create different character types (Warrior, Mage, Archer, etc.)
